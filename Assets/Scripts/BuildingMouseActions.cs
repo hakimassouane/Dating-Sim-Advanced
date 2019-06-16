@@ -17,7 +17,7 @@ public class BuildingMouseActions : MonoBehaviour
     void OnMouseOver()
     {
     	Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
-    	outscript.OutlineWidth = 5;
+    	outscript.OutlineWidth = 10;
     }
 
     void OnMouseExit()
