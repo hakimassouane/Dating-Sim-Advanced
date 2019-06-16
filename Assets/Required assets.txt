@@ -1,3 +1,2 @@
-- Simple city plain
-- Russian buildings
-- Quick Outline
+- ZRNAssets otaku city
+- Quick outline
