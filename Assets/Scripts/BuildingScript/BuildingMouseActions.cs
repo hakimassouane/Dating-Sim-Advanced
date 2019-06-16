@@ -23,7 +23,6 @@ public class BuildingMouseActions : MonoBehaviour
 
     void OnMouseEnter()
     {
-        print("mouse enter");
         if(!EventSystem.current.IsPointerOverGameObject()) {
             
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
@@ -46,7 +45,6 @@ public class BuildingMouseActions : MonoBehaviour
     {
         Cursor.SetCursor(null, Vector2.zero, cursorMode);
         outscript.OutlineWidth = 0;
-        print("mouse down");
         if(!EventSystem.current.IsPointerOverGameObject()) {
 
             buildingPanel.SetActive(true);
