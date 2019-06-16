@@ -3,6 +3,8 @@
 # =============== #
 Temp/
 Library/
+Logs/
+Packages/
 
 [Ll]ibrary/
 [Tt]emp/
