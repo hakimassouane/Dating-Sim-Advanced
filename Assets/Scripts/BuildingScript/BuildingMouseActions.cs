@@ -6,15 +6,22 @@ using UnityEngine.EventSystems;
 
 public class BuildingMouseActions : MonoBehaviour
 {
+    private Outline outscript;
+
+    /* mouse related variables */
 	public Texture2D cursorTexture;
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
 
+    /* Opening pannel related variables */
     public GameObject buildingPanel;
     public Text buildingNameString;
     public string buildingName;
+    public GameObject buildingGameObject;
 
-    private Outline outscript;
+    // Constants
+    private float DISTANCE_TO_TIME_RATIO = 5f;
+    
 
 	void Start ()
 	{
@@ -24,7 +31,6 @@ public class BuildingMouseActions : MonoBehaviour
     void OnMouseEnter()
     {
         if(!EventSystem.current.IsPointerOverGameObject()) {
-            
             Cursor.SetCursor(cursorTexture, hotSpot, cursorMode);
             outscript.OutlineWidth = 10;
         }
@@ -34,7 +40,6 @@ public class BuildingMouseActions : MonoBehaviour
     void OnMouseExit()
     {
         if(!EventSystem.current.IsPointerOverGameObject()) {
-            print("mouse exit");
             Cursor.SetCursor(null, Vector2.zero, cursorMode);
             outscript.OutlineWidth = 0;
         }
@@ -46,10 +51,25 @@ public class BuildingMouseActions : MonoBehaviour
         Cursor.SetCursor(null, Vector2.zero, cursorMode);
         outscript.OutlineWidth = 0;
         if(!EventSystem.current.IsPointerOverGameObject()) {
-
             buildingPanel.SetActive(true);
             buildingNameString.text = buildingName; 
+            travel();
         }
+    }
 
+    void travel()
+    {
+        if (TravelManager.Instance.getLastVisitedBuilding()) {
+            Vector3 targetPosition = buildingGameObject.transform.position;
+            Vector3 currentBuildingPosition = TravelManager.Instance.getLastVisitedBuilding().transform.position;
+            float distance = Vector3.Distance(targetPosition, currentBuildingPosition);
+            int timeConsumed = Mathf.FloorToInt(distance / DISTANCE_TO_TIME_RATIO);
+            int randomTime = Random.Range(timeConsumed, (timeConsumed * 2) + 1);
+
+            TimeManager.Instance.addMinutes(randomTime);
+        } else {
+            TimeManager.Instance.addMinutes(15);
+        }
+        TravelManager.Instance.setLastVisitedBuilding(buildingGameObject);
     }
 }
