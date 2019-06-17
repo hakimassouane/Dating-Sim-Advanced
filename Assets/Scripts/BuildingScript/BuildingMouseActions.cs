@@ -20,7 +20,7 @@ public class BuildingMouseActions : MonoBehaviour
     public GameObject buildingGameObject;
 
     // Constants
-    private float DISTANCE_TO_TIME_RATIO = 5f;
+    private float DISTANCE_TO_TIME_RATIO = 3.5f;
     
 
 	void Start ()
