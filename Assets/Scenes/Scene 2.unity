@@ -656,7 +656,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81304272}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -664,10 +664,10 @@ RectTransform:
   m_Father: {fileID: 1282423206}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -424.5, y: -150}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.10300001, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &81304274
 MonoBehaviour:
@@ -718,7 +718,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
+          m_IntArgument: 30
           m_FloatArgument: 15
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2868,10 +2868,10 @@ RectTransform:
   m_Father: {fileID: 1282423206}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 424.5, y: -150}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMin: {x: 0.90400004, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &508151980
 MonoBehaviour:
@@ -2922,7 +2922,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 15
+          m_IntArgument: 30
           m_FloatArgument: 15
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3528,6 +3528,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: "Batiment abandonn\xE9"
+  buildingGameObject: {fileID: 628074444}
 --- !u!114 &628074447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4802,6 +4803,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: Bat 7
+  buildingGameObject: {fileID: 811924903}
 --- !u!114 &811924908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5785,6 +5787,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: Studio Univerpropre music
+  buildingGameObject: {fileID: 960764394}
 --- !u!114 &960764399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6551,6 +6554,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: "Coiffeur 10\u20AC"
+  buildingGameObject: {fileID: 1059577512}
 --- !u!114 &1059577514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7824,7 +7828,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -8193,10 +8197,10 @@ RectTransform:
   m_Father: {fileID: 1043838458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -242.5}
-  m_SizeDelta: {x: -20, y: -505}
+  m_AnchorMin: {x: 0.02, y: 0.02}
+  m_AnchorMax: {x: 0.98, y: 0.2}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1256373870
 MonoBehaviour:
@@ -8397,6 +8401,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: "Cin\xE9ma"
+  buildingGameObject: {fileID: 1260273363}
 --- !u!114 &1260273365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8467,10 +8472,10 @@ RectTransform:
   m_Father: {fileID: 1043838458}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.02, y: 0.22800002}
+  m_AnchorMax: {x: 0.98, y: 0.29830515}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1282486947
 PrefabInstance:
@@ -10922,6 +10927,62 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1745790765}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1749343585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749343587}
+  - component: {fileID: 1749343586}
+  - component: {fileID: 1749343588}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1749343586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749343585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7efbb9aa83c70b489cf1901286c6a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1749343587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749343585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.9311223, y: 9.598677, z: -4.979797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749343588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749343585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf0d66e3ddfa03419eb4e24df5fc0f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1779966561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12072,10 +12133,10 @@ RectTransform:
   m_Father: {fileID: 1256373869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -447.5, y: -2.5}
-  m_SizeDelta: {x: 895, y: -5}
+  m_AnchorMin: {x: 0.03, y: 0}
+  m_AnchorMax: {x: 1, y: 0.95}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1925298029
 MonoBehaviour:
@@ -12099,18 +12160,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 40
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 1
+    m_MaxSize: 50
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Jour 1
+  m_Text: 1 Septembre 2019 07:00
 --- !u!222 &1925298030
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12500,6 +12561,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: Epicerie
+  buildingGameObject: {fileID: 1998573059}
 --- !u!114 &1998573064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12769,6 +12831,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: Le QG
+  buildingGameObject: {fileID: 2013889692}
 --- !u!114 &2013889697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13481,6 +13544,7 @@ MonoBehaviour:
   buildingPanel: {fileID: 790398439}
   buildingNameString: {fileID: 1698479327}
   buildingName: Centre Commercial
+  buildingGameObject: {fileID: 2083797825}
 --- !u!114 &2083797830
 MonoBehaviour:
   m_ObjectHideFlags: 0
