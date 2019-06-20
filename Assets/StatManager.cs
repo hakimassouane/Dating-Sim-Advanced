@@ -23,12 +23,14 @@ public class StatManager : MonoBehaviour
 	private static Slider beautySlider;
 	private static Slider combatSlider;
 	private static Slider cultSlider;
+	private static Text moneyCounter;
 	private static Dictionary<string, int> statMap = new Dictionary<string, int>();
 	private static Dictionary<string, Slider> statSliderMap = new Dictionary<string, Slider>();
 
 	void Start() {
 		initStatMap();
 		initStatSliderMap();
+		initMoneyCounter();
 	}
 
 	private void initStatMap() {
@@ -38,6 +40,7 @@ public class StatManager : MonoBehaviour
 		statMap.Add("beaute", 0);
 		statMap.Add("combat", 0);
 		statMap.Add("culture", 0);
+		statMap.Add("money", 0);
 	}
 
 	private void initStatSliderMap() {
@@ -56,6 +59,10 @@ public class StatManager : MonoBehaviour
 		statSliderMap.Add("culture", cultSlider);
 	}
 
+	private void initMoneyCounter() {
+		moneyCounter = GameObject.Find("moneyCounter").GetComponent<Text>();
+	}
+
 	public void addStat(string statNameAndAmount) {
 		string[] split = statNameAndAmount.Split(';');
 		string name = split[0];
@@ -71,13 +78,19 @@ public class StatManager : MonoBehaviour
 		updateStatUI(name);
 	}
 
+	public void addMoney(int amount) {
+		statMap["money"] += amount;
+
+		moneyCounter.text = statMap["money"] + " €";
+	}
+
 	public int getStat(string statName) {
 		return statMap[statName];
 	}
 
 	public void updateStatUI(string statName) {
 		Slider currentSlider = statSliderMap[statName];
-		
+
 		currentSlider.value = statMap[statName];
 	}
 }
