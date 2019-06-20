@@ -16,7 +16,6 @@ public class StatManager : MonoBehaviour
 		}
 	}
 
-
 	Dictionary<string, int> statMap = new Dictionary<string, int>();
 
 	void Start() {
@@ -32,7 +31,6 @@ public class StatManager : MonoBehaviour
 		statMap.Add("culture", 0);
 	}
 
-
 	public void addStat(string statNameAndAmount) {
 		string[] split = statNameAndAmount.Split(';');
 		string name = split[0];
@@ -41,7 +39,6 @@ public class StatManager : MonoBehaviour
 		print(name + " " +  amount);
 
 		statMap[name] += amount;
-
 		
 		print(name + " is now : " + statMap[name]);
 	}
