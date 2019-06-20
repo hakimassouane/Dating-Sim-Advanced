@@ -17,15 +17,16 @@ public class TimeManager : MonoBehaviour
 		}
 	}
 
-	private static string[] months;
-
 	// Time variables
+	private static string[] months;
 	private static int currentYear = 2019;
 	private static int currentMonth = 8;
 	private static int currentDay = 1;
 	// in minutes
 	private static int currentTime = 420;
 
+	// UI variables
+	private static Text dateText;
 
 	// Initialize method
 	void Start() {
@@ -43,6 +44,8 @@ public class TimeManager : MonoBehaviour
 		"Novembre",
 		"Decembre"
 		};
+
+		dateText = GameObject.Find("Date").GetComponent<Text>();
 	}
 
 	public void addYear(int amount) {
@@ -108,8 +111,6 @@ public class TimeManager : MonoBehaviour
 
 
 	public void updateDateUI() {
-		GameObject dateUI = GameObject.Find("Date");
-		Text dateText = dateUI.GetComponent<Text>();
 		string dateStringTemplate = currentDay + " " + months[currentMonth] + " " + currentYear + " " + TimeSpan.FromMinutes(currentTime).ToString(@"hh\:mm");
 
 		dateText.text = dateStringTemplate;
