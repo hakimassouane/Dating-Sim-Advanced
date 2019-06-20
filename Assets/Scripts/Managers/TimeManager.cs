@@ -90,6 +90,7 @@ public class TimeManager : MonoBehaviour
 			addedTimeCount += 1;
 			if (currentTime + 1 > 1440) {
 				currentTime = 0;
+				addDay(1);
 	  	 	}
 		 	currentTime += 1;
 		}
