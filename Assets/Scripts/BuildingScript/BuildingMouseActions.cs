@@ -18,6 +18,8 @@ public class BuildingMouseActions : MonoBehaviour
     public Text buildingNameString;
     public string buildingName;
     public GameObject buildingGameObject;
+    public GameObject actionButtonList;
+    public GameObject[] actionButtons;
 
     // Constants
     private float DISTANCE_TO_TIME_RATIO = 3.5f;
@@ -54,6 +56,10 @@ public class BuildingMouseActions : MonoBehaviour
             buildingPanel.SetActive(true);
             buildingNameString.text = buildingName; 
             travel();
+            foreach (GameObject button in actionButtons) {
+                GameObject newButton = Instantiate(button);
+                newButton.transform.parent = actionButtonList.transform;
+            }
         }
     }
 
